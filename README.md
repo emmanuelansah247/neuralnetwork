@@ -60,6 +60,15 @@ It is a subset of deep learning. The neural network code in this repository was 
     To migrate the models to the database, type
     
         py manage.py migrate
+        
+6. Go to this link to download the testing and training files into this directory webapp/mnist_dataset (you need to create this folder)
+
+http://www.pjreddie.com/media/files/mnist_test.csv
+
+Go to this link to download the training file into this folder
+
+http://www.pjreddie.com/media/files/mnist_train.csv
+
     
         
         
