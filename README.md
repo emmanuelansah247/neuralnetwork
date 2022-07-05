@@ -1,4 +1,4 @@
-# Web Scraping Project
+## 3 Layer Neural Network Project
 This is a neural network project using python and django. Neural network is a computer system modelled on the human brain and nervous system.
 It is a subset of deep learning. The neural network code in this repository was written from scratch in python. It is a simple neural network with three layers: Input layer, Hidden layer and Output layer
 
@@ -81,4 +81,6 @@ To train the model, fill the first forms with following values
 
 When you are done, click on submit. This will take around 4 - 10 minutes to train the network (It depends on your machine too). If the training is successful, it will display the accuracy besides the "Test Accuracy". The accuracy is between 0 and 1, where values close to 0 shows poor accuracy and values close to 1 shows good accuracy.
 
-To test 
+To test the model, fill the second form (It is required that you train the model before you proceed to test it)
+To fill the second form, you simply have to click "choose file" to select an image of a number. It should be a number between 0 and 9 (grayscale image is recommended).
+Click on submit below the "choose file" section to submit the form. The predicted value of the image will be displayed close to the "Predicted value" section.
