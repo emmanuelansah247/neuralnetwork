@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Training Our Neural Network </title>
+
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+
+<section class="clear-float">
+
+    <figure class="left-side">
+        <form action="{% url 'trainappvalue' %}" method="POST">
+            {% csrf_token %}
+            <div class="input-container">
+                <label> Enter Epochs </label>
+                <input type="text" name="epochs">
+            </div>
+
+            <div class="input-container">
+                <label> Enter Hidden Nodes </label>
+                <input type="text" name="hiddennodes">
+            </div>
+
+            
+            <div class="button-container">
+                <input type="submit" class="button">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="network-accuracy">
+                        <p> Testing Accuracy: <span class="makeitbold"> {{ network_accuracy }} </span></p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </figure>
+
+    <figure class="right-side">
+
+        
+        <form action="{% url 'testnetwork' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1> This section is use to tests our Neural Network </h1> 
+            <input type="file" name="image">
+
+            <br><br>
+            <div class="button-container">
+                <input type="submit" class="button">
+            </div>
+
+        </form>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Predicted Value: {{ predicted_output }}</h1>
+                </div>
+            </div>
+        </div>
+
+
+    </figure>
+
+</section>
+
+</body>
+</html>

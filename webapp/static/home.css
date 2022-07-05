@@ -1,0 +1,52 @@
+.left-side{
+    width: 40%;
+    margin: 5% 5%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.right-side{
+    width: 40%;
+    margin: 5% 5%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.clear-float::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.input_container{
+    margin-bottom: 10px;
+}
+
+.input_container .input label{
+    margin-right: 10px;
+}
+
+.input_container .makeitbold{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .network-accuracy{
+    font: normal normal normal 20px/1.2em "Roboto";
+}
+
+@media screen and (max-width:720px) {
+    .left-side{
+        width: 90%;
+        margin: 5% 5%;
+        box-sizing: border-box;
+        float: left;
+    }
+    
+    .right-side{
+        width: 90%;
+        margin: 5% 5%;
+        box-sizing: border-box;
+        float: right;
+    }
+}

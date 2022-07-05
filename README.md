@@ -1,2 +1,3 @@
-# neuralnetwork
-This is a neural network project
+install numpy
+install imageio
+install scipy
