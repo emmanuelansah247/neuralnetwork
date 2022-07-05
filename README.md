@@ -1,6 +1,6 @@
 # Web Scraping Project
-This is a neural network project using pythong and django. Neural network is a computer system modelled on the human brain and nervous system.
-It is a subset of deep learning. The neural network code in this repository was written from scratch in python 
+This is a neural network project using python and django. Neural network is a computer system modelled on the human brain and nervous system.
+It is a subset of deep learning. The neural network code in this repository was written from scratch in python. It is a simple neural network with three layers: Input layer, Hidden layer and Output layer
 
 ## Stack
 
@@ -73,7 +73,12 @@ It is a subset of deep learning. The neural network code in this repository was 
  
  #### Testing the application
  
- Whiles on http://127.0.0.1:8000/, you can click on the button "Generate New Files" to generate two files for you i.e the Demo File or Version File.
- Demo files stores the information relating to the main website link. 
- Version File stores the information relating the main link and sub links
- (This should take around 4 to 5 minutes)
+Whiles on http://127.0.0.1:8000/, you will see two forms. The first form is use to train of the model and the second form is use to test the model.
+ 
+To train the model, fill the first forms with following values
+ 1. Epochs - The number of times you want to train the model with the same data (the value should be an integer)
+ 2. Hidden nodes - The number of hidden nodes you want to train the network ( the value shoud be an integer)
+
+When you are done, click on submit. This will take around 4 - 10 minutes to train the network (It depends on your machine too). If the training is successful, it will display the accuracy besides the "Test Accuracy". The accuracy is between 0 and 1, where values close to 0 shows poor accuracy and values close to 1 shows good accuracy.
+
+To test 
