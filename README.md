@@ -63,13 +63,13 @@ It is a subset of deep learning. The neural network code in this repository was 
         
 6. Go to this link to download the testing and training files into this directory /mnist_dataset (you need to create this folder in the parent folder)
 
-http://www.pjreddie.com/media/files/mnist_test.csv
+        http://www.pjreddie.com/media/files/mnist_test.csv
 
-Go to this link to download the training file into this folder
+        Go to this link to download the training file into this folder
 
-http://www.pjreddie.com/media/files/mnist_train.csv
+        http://www.pjreddie.com/media/files/mnist_train.csv
 
-At the end you should get two files in the mnist_dataset folder i.e mnist_test.csv and mnist_train.csv
+        At the end you should get two files in the mnist_dataset folder i.e mnist_test.csv and mnist_train.csv
 
     
         
